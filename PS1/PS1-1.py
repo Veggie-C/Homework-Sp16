@@ -119,6 +119,21 @@ def y_u_no_decimal():
 def pythagorean(a, b):
     pass
 
+
+# Fahrenheit to Celsius
+# Wow, there's a lot of broken code today! Fix this function so that it
+# correctly converts from Fahrenheit to Celsius. Hint: there are TWO
+# bugs in the calculation.
+#
+# Input:
+#   f - the temperature in Fahrenheit (a number)
+#
+# Output:
+#   Return the temperature in Celsius. Do not print anything.
+def fahrenheit_to_celsius(f):
+    return 5 / 9 * f - 32
+
+
 # Below are some test cases that we have written up for you!
 # Feel free to add more to test your code! Though be warned, 
 # our grading program will test more cases than this... so make
@@ -134,8 +149,10 @@ if __name__ == "__main__":
     print "Running repeat_that_again(\"me\")"
     repeat_that_again("me")
 
-    print "identity(3) == " + str(identity(3))
-    print "identity('bob') == " + identity('bob')
-    print "increment(195) == " + str(increment(195))
-    print "is_it_even(4) == " + str(is_it_even(4))
-    print "pythagorean(3, 4) == " + str(pythagorean(3, 4))
+    print "identity(3) == " + repr(identity(3))
+    print "identity('bob') == " + repr(identity('bob'))
+    print "increment(195) == " + repr(increment(195))
+    print "is_it_even(4) == " + repr(is_it_even(4))
+    print "pythagorean(3, 4) == " + repr(pythagorean(3, 4))
+    print "fahrenheit_to_celsius(212) == " + repr(fahrenheit_to_celsius(212))
+    print "fahrenheit_to_celsius(-40) == " + repr(fahrenheit_to_celsius(-40))
