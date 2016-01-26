@@ -49,6 +49,29 @@ def increment(x):
     pass
 
 
+# It's opposite day... or is it?
+#
+# Input: 
+#   b - a boolean
+#
+# Output:
+#   Return True if b is False; return False if b is True. Do not print anything.
+def opposite(b):
+    pass
+
+
+# I have the power!
+#
+# Input:
+#   x - the base (a number)
+#   y - the exponent (an integer)
+#
+# Output:
+#   Return x raised to the power of y. Do not print anything.
+def power(x, y):
+    pass
+
+
 # Can you repeat that?
 # 
 # Input:
@@ -110,6 +133,32 @@ def y_u_no_decimal():
     return 9 / 2
 
 
+# WHY WON'T IT COMPILE?!
+# 
+# Input: None.
+#
+# Output:
+#   Return exactly the following string: I'm taking a class called "CS196"!
+#   Do not print anything.
+def quote_me():
+    pass
+
+
+# I can haz credits?
+# 
+# Input:
+#   registered - whether you are registered for the course (a boolean)
+#   score - an integer in the range [0, 100], zero if registered is False
+#   override - whether you have a credit override (a boolean)
+#
+# Output:
+#   Return True if you are registered for the class and have a score
+#   of at least 60. Also return True if you have a credit override.
+#   In all other cases, return False. Do not print anything.
+def has_course_credit(registered, score, override):
+    pass
+
+
 # Pythagorean theorem
 # Calculate the length of the hypotenuse of a right triangle
 # given the lengths of the legs, a and b.
@@ -138,6 +187,24 @@ def fahrenheit_to_celsius(f):
     return 5 / 9 * f - 32
 
 
+# Close enough
+# This function is too strict! I'm telling you, 99% is good enough!
+#
+# Input:
+#   a - a float
+#   b - a float
+#
+# Output:
+#   Return True if the difference between a and b is less than
+#   or equal to 0.01, and False otherwise. Do not print anything.
+#   Note that a may be larger than, smaller than, or equal to b.
+#
+# Hint:
+#   The absolute value of a number x can be computed using abs(x)
+def close_enough(a, b):
+    return a == b
+
+
 # Below are some test cases that we have written up for you!
 # Feel free to add more to test your code! Though be warned, 
 # our grading program will test more cases than this... so make
@@ -156,7 +223,14 @@ if __name__ == "__main__":
     print "identity(3) == " + repr(identity(3))
     print "identity('bob') == " + repr(identity('bob'))
     print "increment(195) == " + repr(increment(195))
+    print "opposite(True) == " + repr(opposite(True))
+    print "power(2.0, 10) == " + repr(power(2.0, 10))
     print "is_it_even(4) == " + repr(is_it_even(4))
+    print "has_course_credit(True, 89, False) == " + repr(has_course_credit(True, 89, False))
+    print "has_course_credit(False, 0, True) == " + repr(has_course_credit(False, 0, True))
+    print "has_course_credit(False, 0, False) == " + repr(has_course_credit(False, 0, False))
     print "pythagorean(3.0, 4.0) == " + repr(pythagorean(3., 4.))
     print "fahrenheit_to_celsius(212.0) == " + repr(fahrenheit_to_celsius(212.))
     print "fahrenheit_to_celsius(-40.0) == " + repr(fahrenheit_to_celsius(-40.))
+    print "close_enough(5.0, 5.00001) == " + repr(close_enough(5.0, 5.0001))
+    print "close_enough(98.0, 100.0) == " + repr(close_enough(98., 100.))
