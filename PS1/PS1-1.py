@@ -9,7 +9,7 @@
 #     print 'This is the output!'
 # If the specification tells you to *return* a value, you should use:
 #     return 'This is the output!'
-# Do not confuse the two, or you will receive a zero!
+# Do not confuse the two, or you will not receive credit for that problem!
 
 
 # Hello, world!
@@ -119,14 +119,19 @@ def y_u_no_decimal():
 def pythagorean(a, b):
     pass
 
-
 # Below are some test cases that we have written up for you!
 # Feel free to add more to test your code! Though be warned, 
 # our grading program will test more cases than this... so make
 # sure your functions are correct!
+
+# If you want to learn about this __name__ == "__main__",
+# see http://stackoverflow.com/questions/419163/what-does-if-name-main-do
 if __name__ == "__main__":
+    print "Running hello_world():"
     hello_world()
+    print "Running repeat_that(\"double\")"
     repeat_that("double")
+    print "Running repeat_that_again(\"me\")"
     repeat_that_again("me")
 
     print "identity(3) == " + str(identity(3))
