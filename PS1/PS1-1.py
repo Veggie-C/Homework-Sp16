@@ -10,6 +10,10 @@
 # If the specification tells you to *return* a value, you should use:
 #     return 'This is the output!'
 # Do not confuse the two, or you will not receive credit for that problem!
+#
+# If you see the keyword "pass" anywhere, it's just a placeholder
+# for your code. Failure to replace it with actual working code will
+# earn you a not-"pass"ing grade!
 
 
 # Hello, world!
@@ -111,8 +115,8 @@ def y_u_no_decimal():
 # given the lengths of the legs, a and b.
 # 
 # Input:
-#   a - the length of the first leg (a number greater than 0)
-#   b - the length of the second leg (a number greater than 0)
+#   a - the length of the first leg (a float greater than 0)
+#   b - the length of the second leg (a float greater than 0)
 #
 # Output:
 #   Return the numeric value of the hypotenuse. Do not print anything.
@@ -126,7 +130,7 @@ def pythagorean(a, b):
 # bugs in the calculation.
 #
 # Input:
-#   f - the temperature in Fahrenheit (a number)
+#   f - the temperature in Fahrenheit (a float)
 #
 # Output:
 #   Return the temperature in Celsius. Do not print anything.
@@ -144,15 +148,15 @@ def fahrenheit_to_celsius(f):
 if __name__ == "__main__":
     print "Running hello_world():"
     hello_world()
-    print "Running repeat_that(\"double\")"
+    print "Running repeat_that(\"double\"):"
     repeat_that("double")
-    print "Running repeat_that_again(\"me\")"
+    print "Running repeat_that_again(\"me\"):"
     repeat_that_again("me")
 
     print "identity(3) == " + repr(identity(3))
     print "identity('bob') == " + repr(identity('bob'))
     print "increment(195) == " + repr(increment(195))
     print "is_it_even(4) == " + repr(is_it_even(4))
-    print "pythagorean(3, 4) == " + repr(pythagorean(3, 4))
-    print "fahrenheit_to_celsius(212) == " + repr(fahrenheit_to_celsius(212))
-    print "fahrenheit_to_celsius(-40) == " + repr(fahrenheit_to_celsius(-40))
+    print "pythagorean(3.0, 4.0) == " + repr(pythagorean(3., 4.))
+    print "fahrenheit_to_celsius(212.0) == " + repr(fahrenheit_to_celsius(212.))
+    print "fahrenheit_to_celsius(-40.0) == " + repr(fahrenheit_to_celsius(-40.))
