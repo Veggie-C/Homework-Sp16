@@ -11,7 +11,7 @@
 #
 # Output:
 #   Print the 2 solutions of the quadratic equation, one on each
-#   line. Do not return anything.
+#   line. Do not return anything. Print them in increasing order.
 #
 # Additional notes:
 #   You may assume that the discriminant is positive (i.e., 
@@ -22,8 +22,8 @@
 #
 # Example:
 #   solve_quadratic(5.0, 6.0, 1.0) should print:
-#     -5.6
-#     -6.4
+#     -1.0
+#     -0.2
 def solve_quadratic(a, b, c):
     pass
 
