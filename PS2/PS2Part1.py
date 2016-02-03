@@ -47,7 +47,7 @@ def check_vowels(word):
 #   >>> snow_day(7.0, 25.0, True)
 #   'snowman'
 #
-#   >>> snow_day(9.0, 45.0, True)
+#   >>> snow_day(9.0, 45.0, False)
 #   'netflix'
 def snow_day(snow, temp, classes_canceled):
     pass
