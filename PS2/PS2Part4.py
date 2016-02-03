@@ -19,7 +19,7 @@
 #
 #   >>> checkerboard(1, 1)
 #   x
-def checkerboard(cols, row):
+def checkerboard(rows, cols):
     pass
 
 
