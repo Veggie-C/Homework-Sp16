@@ -231,5 +231,3 @@ if __name__ == "__main__":
             {"CS196": 1, "CS125": 4},
             [("CS196", 'A'), ("CS125", 'B')])
         ) < 0.001 and "PASSED!" or "FAILED!")
-
-print string_categorizer(['apple', 'flying', 'BLAH'])
