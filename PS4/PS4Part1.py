@@ -16,7 +16,7 @@
 #   they originally appeared in each inner list.
 #
 # Example:
-#   >>> flatten_list([1, 2.5, 3], [4, 5], [], ["BOB"])
+#   >>> flatten_list([[1, 2.5, 3], [4, 5], [], ["BOB"]])
 #   [1, 2.5, 3, 4, 5, "BOB"]
 def flatten_list(x):
     pass
@@ -193,8 +193,12 @@ if __name__ == "__main__":
         else:
             return "PASSED!"
 
+    print 'flatten_list([[1, 2.5, 3], [4, 5], [], ["BOB"]]): ' + check(
+        flatten_list([[1, 2.5, 3], [4, 5], [], ["BOB"]]),
+        [1, 2.5, 3, 4, 5, "BOB"])
+
     print "alphabet_soup({'A': 5, 'B': 10}): " + check(
-        "".join(sorted(alphabet_soup({"A": 5, "B": 10}))),
+        "".join(sorted(alphabet_soup({"A": 5, "B": 10}) or "")),
         "AAAAABBBBBBBBBB")
 
     print "create_lookup(['apple', 'banana', 'cactus']): " + check(
@@ -226,8 +230,8 @@ if __name__ == "__main__":
         [[0, 0, 0, 0], [0, 1, 2, 3], [0, 2, 4, 6], [0, 3, 6, 9]])
 
     print "calculate_gpa(...): " + (abs(3.76 -
-        calculate_gpa(
+        (calculate_gpa(
             {'A': 4.0, 'B': 3.7, 'C': 3.4},
             {"CS196": 1, "CS125": 4},
-            [("CS196", 'A'), ("CS125", 'B')])
+            [("CS196", 'A'), ("CS125", 'B')]) or 0)
         ) < 0.001 and "PASSED!" or "FAILED!")
